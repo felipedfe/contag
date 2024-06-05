@@ -14,6 +14,7 @@ function VideoContainer({
   muted = "0",
   autopause = "0",
   aspectRatio = "16/9",
+  rel = "0"
 }) {
   return (
     <VideoWrapper
@@ -21,7 +22,7 @@ function VideoContainer({
     >
       <Video
         title="video-container"
-        src={`${url}?h=c1d00cc6da&autoplay=${autoPlay}&title=${title}&byline=${byLine}&portrait=${portrait}&controls=${controls}&loop=${loop}&muted=${muted}&autopause=${autopause}`}
+        src={`${url}?h=c1d00cc6da&autoplay=${autoPlay}&title=${title}&byline=${byLine}&portrait=${portrait}&controls=${controls}&loop=${loop}&muted=${muted}&autopause=${autopause}&rel=${rel}`}
         frameBorder="0"
         allow="autoplay"
         loading="lazy"

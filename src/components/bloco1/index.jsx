@@ -5,13 +5,29 @@ const Container = styled.section`
   position: relative;
   display: grid;
   grid-template-columns: 30% 50% 20%;
-  background-color: #ffd100;
+  /* background-color: #ffd100; */
   /* clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%); */
   padding: 2rem 0;
   width: 100%;
 
   @media all and (max-width: 1024px) {
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 100%;
+    gap: 2rem;
+  }
+`;
+
+const Background = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #ffd100;
+  clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
+  z-index: -1;
+
+  @media all and (max-width: 1024px) {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 `;
 
@@ -31,6 +47,15 @@ const FormacaoWrapper = styled.div`
     color: #90401d;
     padding-left: 1.3rem;
     font-weight: 700;
+  }
+
+  @media all and (max-width: 1024px) {
+    & p {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+      padding-left: 0;
+    }
   }
 `;
 
@@ -54,7 +79,6 @@ const FrutasWrapper = styled.div`
   position: absolute;
   bottom: 0;
   right: 0;
-  /* background-color: red; */
 
   & img {
     width: 250px;
@@ -79,6 +103,7 @@ const FrutasWrapper = styled.div`
 const Bloco1 = () => {
   return (
     <Container>
+      <Background />
       <FormacaoWrapper>
         <h2 className='title' >FORMAÇÃO <br></br> NACIONAL</h2>
         <p>

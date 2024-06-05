@@ -1,11 +1,12 @@
-import './App.css';
 import banner from '../src/assets/images/banner.jpg';
 import cartilha from '../src/assets/images/cartilha.png';
-import VideoContainer from './components/video-container';
 import ContactForm from './components/contact-form';
 import Podcast from './components/podcast-container';
 import Participe from './components/participe';
 import Bloco1 from './components/bloco1';
+import BlocoVideo from './components/bloco-video';
+import BaixeAqui from './components/baixe-aqui';
+import './App.css';
 
 function App() {
 
@@ -105,27 +106,27 @@ function App() {
           </section>
 
           {/* Baixe aqui */}
-          <section className='baixe'>
+          {/* <section className='baixe'>
             <img
-              style={{ width: '100%' }}
+              // style={{ width: '100%' }}
+              className='baixe-img'
               src={cartilha}
               alt='cartilha' />
 
             <div className='baixe-div-1'>
               <p>Conheça mais sobre essa questão fazendo o download da cartilha</p>
-              <h3 className='title'>BAIXE AQUI</h3>
+              <button>
+                <h3 className='title'>BAIXE AQUI</h3>
+              </button>
             </div>
-          </section>
+          </section> */}
+
+          <BaixeAqui />
         </section>
 
-        {/* Bloco 3 Vídeo */}
-        <section
-          style={{ width: '100%', padding: '0 3rem' }}>
-          <VideoContainer
-            url="https://player.vimeo.com/video/943833148?h=b3d0b8570c"
-            controls="1"
-          />
-        </section>
+
+        {/* Bloco 3 */}
+        <BlocoVideo />
 
         {/* Bloco 4 */}
         <Podcast />
@@ -135,7 +136,7 @@ function App() {
 
 
         {/* <div style={{ height: '100vh', width: '100%' }}>
-          <iframe src="https://www.utopika.com.br/sobre" width="100%" height="100%" style={{ border: 'none' }}></iframe>
+          <iframe src='https://www.utopika.com.br/sobre' width='100%' height='100%' style={{ border: 'none' }}></iframe>
         </div> */}
 
         <ContactForm />

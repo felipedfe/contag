@@ -36,7 +36,7 @@ export const PodcastCard = styled.section`
 
 export const PodcastTitle = styled.h3`
   color: #ffd200;
-  font-weight: 600;
+  font-weight: 700;
 `;
 
 export const Description = styled.p`
