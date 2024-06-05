@@ -1,0 +1,132 @@
+main {
+  display: flex;
+  justify-content: center;
+  background-color: pink;
+}
+
+.content {
+  /* background-color: rgb(255, 255, 124); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1400px;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.title {
+  color: #fff;
+  font-size: 30px;
+  display: inline-block;
+  line-height: 1.2;
+  padding: 8px 20px;
+}
+
+/* Bloco 1 */
+
+.bloco-1 {
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  background-color: #ffd100;
+  clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.bloco-1-div-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 3rem;
+
+  h2 {
+    background-color: #cd450a;
+  }
+
+  p {
+    color: #90401d;
+    padding-left: 1.3rem;
+    font-weight: 700;
+  }
+}
+
+.bloco-1-div-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+/* Bloco 2 */
+
+.bloco-2 {
+  display: grid;
+  grid-template-columns: 50% 48%;
+  gap: 2rem;
+  width: 100%;
+}
+
+.datas {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 3rem;
+  background-color: #90401d;
+}
+
+.datas-div-1 {
+  h2 {
+    background-color: #73c4c5;
+  }
+}
+
+.datas-item {
+  .datas-item-titulo {
+    color: #ffd100;
+  }
+
+  .datas-item-conteudo {
+    color: #fff;
+  }
+}
+
+.baixe {
+  background-color: #689261;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  /* gap: 2rem; */
+  padding: 2rem 0 1rem 0;
+}
+
+.baixe-div-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 0 4rem 0 2rem;
+
+  p {
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 20px;
+    background-color: #ffd100;
+    color: #90401d;
+    text-align: center;
+    padding: 8px;
+  }
+}
+
+/* @media all and (max-width: 900px) {
+  .content {
+    margin: 0;
+  }
+} */
