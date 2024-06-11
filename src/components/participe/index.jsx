@@ -17,7 +17,25 @@ const Container = styled.section`
 const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   padding: 2rem 0 3rem 3rem;
+  z-index: 1;
+
+  & p {
+    font-size: 22px;
+  }
+
+  & .participe {
+    font-weight: 800;
+  }
+
+  & .info {
+    width: 70%;
+
+    @media all and (max-width: 900px) {
+      width: 60%;
+    }
+  }
 
   @media all and (max-width: 700px) {
     text-align: center;
@@ -27,6 +45,11 @@ const TextWrapper = styled.div`
     & .participe {
       font-size: 20px;
     }
+
+    & .info {
+    width: 100%;
+    font-size: 20px;
+  }
   }
 `
 
@@ -35,6 +58,7 @@ const Mao = styled.img`
   top: 0;
   right: 0;
   width: 230px;
+  z-index: 0;
 
   @media all and (max-width: 700px) {
       width: 170px;
@@ -55,8 +79,11 @@ const Participe = () => {
         }}
       >
         <TextWrapper>
-          <p className='participe'>Participe!</p>
-          <p>Informações: meioambiente@contag.org.br</p>
+          <p className='participe'>Participe da conversa!</p>
+          <p className='info'>
+            Use as hashtags #Seravaichover e #AgriculturaFamilareClima nas redes sociais para
+            compartilhar suas ideias e experiências sobre a agricultura familiar e a crise do clima.
+          </p>
         </TextWrapper>
         <Mao src={mao} alt="mão segurando sementes" />
       </div>

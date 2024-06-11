@@ -7,6 +7,16 @@ import rightArrow from '../../assets/images/right.svg';
 
 import imagem1 from '../../assets/images/carrossel-bloco-1/carrossel-01.png';
 import imagem2 from '../../assets/images/carrossel-bloco-1/carrossel-02.png';
+import imagem3 from '../../assets/images/carrossel-bloco-1/carrossel_03.png';
+import imagem4 from '../../assets/images/carrossel-bloco-1/carrossel_04.png';
+import imagem5 from '../../assets/images/carrossel-bloco-1/carrossel_05.png';
+import imagem6 from '../../assets/images/carrossel-bloco-1/carrossel_06.png';
+import imagem7 from '../../assets/images/carrossel-bloco-1/carrossel_07.png';
+import imagem8 from '../../assets/images/carrossel-bloco-1/carrossel_08.png';
+import imagem9 from '../../assets/images/carrossel-bloco-1/carrossel_09.png';
+import imagem10 from '../../assets/images/carrossel-bloco-1/carrossel_10.png';
+
+const images = [imagem1, imagem2, imagem3, imagem4, imagem5, imagem6, imagem7, imagem8, imagem9, imagem10];
 
 const Container = styled.section`
   width: 100%;
@@ -30,7 +40,7 @@ const Container = styled.section`
   }
 
   @media all and (max-width: 600px) {
-    padding: 0 3%;
+    padding: 0 5%;
   }
 `
 
@@ -58,7 +68,8 @@ const CustomNextArrow = (props) => {
 const CarrosselBloco1 = () => {
   // Configuração do carrossel
   var settings = {
-    // dots: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     infinite: true,
     arrows: true,
     speed: 500,
@@ -71,12 +82,11 @@ const CarrosselBloco1 = () => {
   return (
     <Container>
       <Slider {...settings}>
-        <ImageWrapper>
-          <img src={imagem1} />
-        </ImageWrapper>
-        <ImageWrapper>
-          <img src={imagem2} />
-        </ImageWrapper>
+        {images.map((image, index) => (
+          <ImageWrapper key={index}>
+            <img src={image} alt={`Slide ${index}`} />
+          </ImageWrapper>
+        ))}
       </Slider>
     </Container>
   )

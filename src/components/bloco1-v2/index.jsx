@@ -44,7 +44,7 @@ const AgriculturaFamiliar = styled.section`
   }
 
   @media all and (max-width: 600px) {
-    padding: 1rem 1rem 0 1rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
   }
 `;
 

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.section`
   display: grid;
   grid-template-columns: 30% 70%;
+  align-items: center;
   background-color: #cf850c;
   width: 100%;
   padding: 2rem;
@@ -13,6 +14,11 @@ export const Container = styled.section`
 
   & .slick-prev, .slick-next {
     height: 40px;
+  }
+
+  @media all and (max-width: 1024px) {
+    grid-template-columns: 100%;
+    gap: 2rem;
   }
 `;
 
@@ -27,6 +33,11 @@ export const TitleWrapper = styled.div`
     color: #fff;
     font-weight: 800;
     padding-left: 1rem;
+    line-height: 1.5;
+
+    @media all and (max-width: 1024px) {
+      padding-left: 0;
+    }
   }
 
   & .slogan {
@@ -48,6 +59,11 @@ export const PodcastCard = styled.section`
   &>img {
       width: 100%;
   }
+
+  @media all and (max-width: 600px) {
+    grid-template-columns: 100%;
+    gap: 1rem;
+  }
 `;
 
 export const PodcastTitle = styled.h3`
@@ -68,5 +84,5 @@ export const InfoWrapper = styled.div`
 export const IconWrapper = styled.div`
   display: flex;
   max-width: 60px;
-  margin-left: -10px;
+  margin-left: -5px;
 `;
