@@ -8,11 +8,15 @@ import {
   Description,
   InfoWrapper,
   TitleWrapper,
+  PodCastWrapper,
+  IconWrapper,
 } from "./styled";
 import { AiOutlineSpotify as Spotify } from 'react-icons/ai';
 import { RiDownloadLine as Download } from 'react-icons/ri';
 import leftArrow from '../../assets/images/left.svg';
 import rightArrow from '../../assets/images/right.svg';
+import spotify from '../../assets/images/icone-spotify.svg'
+import download from '../../assets/images/icone-download.svg'
 import podcastThumb1 from '../../assets/images/thumb-podcast-1.jpg';
 
 const Podcast = () => {
@@ -32,10 +36,30 @@ const Podcast = () => {
   };
 
   // Configuração do carrossel
+  // var settings = {
+  //   // dots: true,
+  //   infinite: true,
+  //   arrows: false,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   prevArrow: <CustomPrevArrow />,
+  //   nextArrow: <CustomNextArrow />
+  // };
+
+  const episodes = [
+    {
+      thumb: podcastThumb1,
+      title: "EP 0 - Teaser",
+      description: "Em breve",
+      alt: "homem do campo olhando para o horizonte",
+    },
+    // Você pode adicionar mais episódios aqui
+  ];
+
   var settings = {
-    // dots: true,
-    infinite: true,
-    arrows: true,
+    infinite: episodes.length > 1,
+    arrows: episodes.length > 0,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -43,53 +67,60 @@ const Podcast = () => {
     nextArrow: <CustomNextArrow />
   };
 
-
   return (
     <Container>
       <TitleWrapper>
         <h2 className='title'>PODCAST</h2>
+        <p>
+          Será que vai chover?
+          Essa é a pergunta que nós da
+          Agricultura Familiar
+          sempre nos fazemos para
+          plantar e para colher.
+        </p>
+        <p className='slogan'>
+          Escute a nossa voz
+        </p>
       </TitleWrapper>
-      <Slider {...settings}>
-
-        {/* Episódio 1 */}
-        <div>
+      {episodes.length > 0 ? (
+        <Slider {...settings}>
+          {episodes.map((episode, index) => (
+            <PodCastWrapper key={index}>
+              <PodcastCard>
+                <img src={episode.thumb} alt={episode.alt} />
+                <InfoWrapper>
+                  <PodcastTitle>{episode.title}</PodcastTitle>
+                  <Description>
+                    {episode.description}
+                  </Description>
+                  <IconWrapper>
+                    <img src={spotify} alt='icone spotify' />
+                    <img src={download} alt='icone download' />
+                  </IconWrapper>
+                </InfoWrapper>
+              </PodcastCard>
+            </PodCastWrapper>
+          ))}
+        </Slider>
+      ) : (
+        <PodCastWrapper>
           <PodcastCard>
-            <img src={podcastThumb1} alt='homem do campo olhando para o horizonte' />
+            <img src={episodes[0].thumb} alt={episodes[0].alt} />
             <InfoWrapper>
-              <PodcastTitle>EP 0 - Teaser</PodcastTitle>
+              <PodcastTitle>{episodes[0].title}</PodcastTitle>
               <Description>
-                Como vocês sabem, nós que trabalhamos com a terra,
-                estamos vendo o clima mudar bem diante dos nossos olhos.
-                O calor tá mais forte e por mais tempo, as chuvas às vezes
-                somem quando mais precisamos, ou então caem de uma vez,
-                alagando tudo. Isso tudo mexe com o nosso jeito de plantar e
-                colher. E não é só a gente que tá notando isso, né?
+                {episodes[0].description}
               </Description>
-              <div>
-                <Spotify size={40} color='#8f401c' style={{ backgroundColor: '#ffd200', borderRadius: '50px' }} />
-                <Download size={40} color='#8f401c' style={{ backgroundColor: '#ffd200', borderRadius: '50px', padding: '5px', }} />
-              </div>
+              <IconWrapper>
+                {/* <Spotify size={40} color='#8f401c' style={{ backgroundColor: '#ffd200', borderRadius: '50px' }} /> */}
+                {/* <Download size={40} color='#8f401c' style={{ backgroundColor: '#ffd200', borderRadius: '50px', padding: '5px', }} /> */}
+                <img src={spotify} alt='icone spotify' />
+                <img src={download} alt='icone download' />
+              </IconWrapper>
             </InfoWrapper>
           </PodcastCard>
-        </div>
-
-        {/* Episódio 2 */}
-        <div>
-          <PodcastCard>
-            <img src={podcastThumb1} alt='outra descripcao' />
-            <InfoWrapper>
-              <PodcastTitle>EP 0 - Teaser</PodcastTitle>
-              <Description>
-                Uma descricao
-              </Description>
-              <div>
-                <Spotify size={40} color='#8f401c' style={{ backgroundColor: '#ffd200', borderRadius: '50px' }} />
-                <Download size={40} color='#8f401c' style={{ backgroundColor: '#ffd200', borderRadius: '50px', padding: '5px', }} />
-              </div>
-            </InfoWrapper>
-          </PodcastCard>
-        </div>
-      </Slider>
+        </PodCastWrapper>
+      )}
     </Container>
   )
 };

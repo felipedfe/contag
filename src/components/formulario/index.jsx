@@ -17,7 +17,7 @@ function Formulario() {
 
   // Substitua esta URL pela URL que você obteve ao implantar seu Google Apps Script
   // const url = '/api';
-  const url = 'https://script.google.com/macros/s/AKfycbzCtfkm2V0zexH7-fKBj1DW3IIWSqe3KibHWHKFsnaDpFyQHUc9a4jQoULAQpTsAGWbxA/exec';
+  const url = 'https://script.google.com/macros/s/AKfycbx18nSNLSxcQgGRao_z1fcwiwUCfLokww6Y1fO17yg-fvK8GtJxQ98EhL76jVWmUWfQMA/exec';
 
   //   const handleSubmit = async (event) => {
   //     event.preventDefault();
@@ -86,6 +86,7 @@ function Formulario() {
       // Limpa o formulário após sucesso
       setNome('');
       setEmail('');
+      setMensagem('');
     } catch (error) {
       // Trata erros de rede ou de programação
       console.error('Erro ao enviar dados:', error);
@@ -133,7 +134,7 @@ function Formulario() {
             placeholder="Email"
             required
           />
-          <SubmitButton type="submit">Enviar</SubmitButton>
+          <SubmitButton type="submit">ENVIAR</SubmitButton>
         </InputsWrapper>
       </form>
     </Container>
@@ -141,3 +142,4 @@ function Formulario() {
 }
 
 export default Formulario;
+

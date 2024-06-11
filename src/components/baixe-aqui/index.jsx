@@ -140,8 +140,8 @@ const Info = styled.div`
 
 const DownloadButton = styled.a`
   color: #90401d;
-  font-size: 22px;
   background-color: #ffd100;
+  font-size: 22px;
   padding: 8px;
   font-weight: 800;
   line-height: 1.2;

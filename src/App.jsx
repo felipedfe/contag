@@ -95,7 +95,7 @@ function App() {
 
         {/* <ContactForm /> */}
 
-        <Formulario />
+        {/* <Formulario /> */}
 
       </section>
     </main>

@@ -7,6 +7,10 @@ const Container = styled.section`
   grid-template-columns: 52% 46%;
   gap: 2rem;
   width: 100%;
+
+  @media all and (max-width: 1024px) {
+    grid-template-columns: 100%;
+}
 `;
 
 const Bloco2 = () => {
