@@ -5,16 +5,16 @@ import "slick-carousel/slick/slick-theme.css";
 import leftArrow from '../../assets/images/left.svg';
 import rightArrow from '../../assets/images/right.svg';
 
-import imagem1 from '../../assets/images/carrossel-bloco-1/carrossel-01.png';
-import imagem2 from '../../assets/images/carrossel-bloco-1/carrossel-02.png';
-import imagem3 from '../../assets/images/carrossel-bloco-1/carrossel_03.png';
-import imagem4 from '../../assets/images/carrossel-bloco-1/carrossel_04.png';
-import imagem5 from '../../assets/images/carrossel-bloco-1/carrossel_05.png';
-import imagem6 from '../../assets/images/carrossel-bloco-1/carrossel_06.png';
-import imagem7 from '../../assets/images/carrossel-bloco-1/carrossel_07.png';
-import imagem8 from '../../assets/images/carrossel-bloco-1/carrossel_08.png';
-import imagem9 from '../../assets/images/carrossel-bloco-1/carrossel_09.png';
-import imagem10 from '../../assets/images/carrossel-bloco-1/carrossel_10.png';
+import imagem1 from '../../assets/images/carrossel-bloco-1/carrossel_01.webp';
+import imagem2 from '../../assets/images/carrossel-bloco-1/carrossel_02.webp';
+import imagem3 from '../../assets/images/carrossel-bloco-1/carrossel_03.webp';
+import imagem4 from '../../assets/images/carrossel-bloco-1/carrossel_04.webp';
+import imagem5 from '../../assets/images/carrossel-bloco-1/carrossel_05.webp';
+import imagem6 from '../../assets/images/carrossel-bloco-1/carrossel_06.webp';
+import imagem7 from '../../assets/images/carrossel-bloco-1/carrossel_07.webp';
+import imagem8 from '../../assets/images/carrossel-bloco-1/carrossel_08.webp';
+import imagem9 from '../../assets/images/carrossel-bloco-1/carrossel_09.webp';
+import imagem10 from '../../assets/images/carrossel-bloco-1/carrossel_10.webp';
 
 const images = [imagem1, imagem2, imagem3, imagem4, imagem5, imagem6, imagem7, imagem8, imagem9, imagem10];
 
@@ -73,6 +73,7 @@ const CarrosselBloco1 = () => {
     infinite: true,
     arrows: true,
     speed: 500,
+    lazyLoad: 'ondemand',
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: <CustomPrevArrow />,

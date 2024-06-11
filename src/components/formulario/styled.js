@@ -67,6 +67,14 @@ export const InputsWrapper = styled.div`
   gap: 10px;
   width: 100%;
   height: 100%;
+
+  & .relato {
+    color: #90401d;
+    font-weight: 800;
+    font-size: 18px;
+    background-color: #fff;
+    padding: 10px;
+  }
 `;
 
 export const Input = styled.input`

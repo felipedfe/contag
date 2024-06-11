@@ -6,6 +6,11 @@ import logo4 from '../../assets/images/logos/contag.jpg';
 import logoApoio1 from '../../assets/images/logos/apoio-ics.jpg';
 import logoApoio2 from '../../assets/images/logos/apoio-porticus.jpg';
 
+const Container = styled.section`
+  margin-bottom: 3rem;
+  width: 100%;
+`;
+
 const Titulo = styled.section`
   display: flex;
   justify-content: flex-start;
@@ -42,9 +47,11 @@ const ImageWrapper1 = styled.div`
 `;
 
 const ImageWrapper2 = styled(ImageWrapper1)`
-  grid-template-columns: .5fr .6fr 1fr 1.1fr;
+  margin-top: 1rem;
+  grid-template-columns: .3fr .4fr 1fr 1.1fr;
 
   @media all and (max-width: 600px) {
+    margin-top: 0;
     grid-template-columns: .7fr .9fr 1fr 1.1fr;
   }
 
@@ -52,7 +59,7 @@ const ImageWrapper2 = styled(ImageWrapper1)`
 
 const BlocoLogos = () => {
   return (
-    <>
+    <Container>
       <Titulo>
         <p>Realização</p>
         <ImageWrapper1>
@@ -81,7 +88,7 @@ const BlocoLogos = () => {
           </div>
         </ImageWrapper2>
       </Titulo>
-    </>
+    </Container>
   )
 };
 

@@ -5,6 +5,10 @@ const Container = styled.section`
   width: 100%;
   padding: 0 3rem;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   @media all and (max-width: 900px) {
     padding: 0;
   }

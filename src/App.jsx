@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
 
 import bannerDesktop from '../src/assets/images/banner.jpg';
-import bannerMobile from '../src/assets/images/banner-mobile.jpg';
+import bannerMobile from '../src/assets/images/banner-mobile.webp';
 import Podcast from './components/podcast-container';
 import Participe from './components/participe';
 import BlocoLogos from './components/bloco-logos';
