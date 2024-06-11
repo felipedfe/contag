@@ -46,7 +46,7 @@ button:hover {
   display: inline-block;
   /* line-height: 1.2; */
   padding: 8px 20px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* Bloco 1 */
@@ -75,7 +75,7 @@ button:hover {
   p {
     color: #90401d;
     padding-left: 1.3rem;
-    font-weight: 700;
+    font-weight: 800;
   }
 }
 
@@ -169,7 +169,7 @@ button:hover {
   p {
     color: #fff;
     line-height: 1.5;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 18px;
   }
 

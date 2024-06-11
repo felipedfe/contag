@@ -6,7 +6,7 @@ const Container = styled.section`
     background-color: #90401d;
     color: #ffd200;
     width: 100%;
-    font-weight: 700;
+    font-weight: 800;
     /* padding: 2rem 3rem 3rem 3rem; */
 
     @media all and (max-width: 700px) {

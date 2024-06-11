@@ -36,7 +36,7 @@
 //   & p {
 //     color: #fff;
 //     line-height: 1.5;
-//     font-weight: 700;
+//     font-weight: 800;
 //     font-size: 20px;
 //   }
 
@@ -59,7 +59,7 @@
 //   font-size: 22px;
 //   background-color: #ffd100;
 //   padding: 8px;
-//   font-weight: 700;
+//   font-weight: 800;
 //   line-height: 1.2;
 
 //   @media all and (min-width: 700px) {
@@ -121,7 +121,7 @@ const Info = styled.div`
   & p {
     color: #fff;
     line-height: 1.5;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 20px;
   }
 
@@ -143,10 +143,11 @@ const DownloadButton = styled.a`
   font-size: 22px;
   background-color: #ffd100;
   padding: 8px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
   text-decoration: none;
   display: inline-block;
+  text-align: center;
 
   @media all and (min-width: 700px) {
      &:hover {

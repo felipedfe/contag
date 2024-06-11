@@ -46,7 +46,7 @@ const FormacaoWrapper = styled.div`
   & p {
     color: #90401d;
     padding-left: 1.3rem;
-    font-weight: 700;
+    font-weight: 800;
   }
 
   @media all and (max-width: 1024px) {

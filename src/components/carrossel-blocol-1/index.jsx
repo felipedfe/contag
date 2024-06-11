@@ -11,7 +11,7 @@ import imagem2 from '../../assets/images/carrossel-bloco-1/carrossel-02.png';
 const Container = styled.section`
   width: 100%;
   height: 100%;
-  background-color: red;
+  /* background-color: #689261; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +24,14 @@ const Container = styled.section`
     height: 100%;
     width: 100%;
   } */
+
+    @media all and (max-width: 1024px) {
+    padding: 0 10%;
+  }
+
+  @media all and (max-width: 600px) {
+    padding: 0 3%;
+  }
 `
 
 const ImageWrapper = styled.div`

@@ -6,9 +6,17 @@ import CarrosselBloco1 from '../carrossel-blocol-1';
 
 const Container = styled.section`
   display: grid;
-  grid-template-columns: 61% 38%;
+  grid-template-columns: 59% 38%;
   width: 100%;
   gap: 2rem;
+
+  @media all and (max-width: 1060px) {
+    grid-template-columns: 48% 48%;
+  }
+
+  @media all and (max-width: 1024px) {
+    grid-template-columns: 100%;
+  }
 `;
 
 const AgriculturaFamiliar = styled.section`
@@ -17,17 +25,26 @@ const AgriculturaFamiliar = styled.section`
   flex-direction: column;
   gap: 1.5rem;
   width: 100%;
-  padding: 2rem 4rem 1rem 4rem;
+  padding: 10% 4rem 2rem 4rem;
 
   & h2 {
     background-color: #73c4c5;
     font-size: 22px;
     max-width: 90%;
+
+    @media all and (max-width: 600px) {
+    text-align: center;
+    max-width: 100%;
+  }
   }
 
   p {
     color: #fff;
     font-size: 20px;
+  }
+
+  @media all and (max-width: 600px) {
+    padding: 1rem 1rem 0 1rem;
   }
 `;
 
@@ -75,16 +92,26 @@ const FrutasWrapper = styled.div`
 
   @media all and (max-width: 1200px) {
     & img {
+      width: 180px;
+    }
+  }
+
+  @media all and (max-width: 1060px) {
+    & img {
       width: 150px;
     }
   }
 
-  @media all and (max-width: 1024px) {
-    position: unset;
+  @media all and (max-width: 600px) {
+    position: relative;
     justify-content: flex-end;
+    margin-top: -20px;
+    bottom: 0;
+    right: -20px;
 
     & img {
       justify-content: flex-end;
+      width: 180px;
     }
   }
 `;

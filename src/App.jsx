@@ -9,6 +9,7 @@ import BaixeAqui from './components/baixe-aqui';
 import Formulario from './components/formulario';
 import './App.css';
 import Bloco1V2 from './components/bloco1-v2';
+import Bloco2 from './components/bloco-2';
 
 function App() {
 
@@ -23,12 +24,10 @@ function App() {
 
         {/* Bloco 1 Formacao Nacional */}
 
-        {/* <Bloco1 /> */}
+        <Bloco1 />
         <Bloco1V2 />
 
-        {/* Bloco 2 Datas e Baixe aqui */}
-        <section className='bloco-2'>
-          {/* Datas */}
+        {/* <section className='bloco-2'>
           <section className='datas'>
             <div className='datas-div-1'>
               <h2 className='title'>DATAS</h2>
@@ -74,25 +73,11 @@ function App() {
             </div>
           </section>
 
-          {/* Baixe aqui */}
-          {/* <section className='baixe'>
-            <img
-              // style={{ width: '100%' }}
-              className='baixe-img'
-              src={cartilha}
-              alt='cartilha' />
-
-            <div className='baixe-div-1'>
-              <p>Conheça mais sobre essa questão fazendo o download da cartilha</p>
-              <button>
-                <h3 className='title'>BAIXE AQUI</h3>
-              </button>
-            </div>
-          </section> */}
-
           <BaixeAqui />
-        </section>
+        </section> */}
 
+        {/* Bloco 2 */}
+        <Bloco2 />
 
         {/* Bloco 3 */}
         <BlocoVideo />
