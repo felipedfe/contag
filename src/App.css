@@ -44,7 +44,7 @@ button:hover {
   color: #fff;
   font-size: 30px;
   display: inline-block;
-  line-height: 1.2;
+  /* line-height: 1.2; */
   padding: 8px 20px;
   font-weight: 700;
 }

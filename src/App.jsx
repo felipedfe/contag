@@ -6,7 +6,9 @@ import Participe from './components/participe';
 import Bloco1 from './components/bloco1';
 import BlocoVideo from './components/bloco-video';
 import BaixeAqui from './components/baixe-aqui';
+import Formulario from './components/formulario';
 import './App.css';
+import Bloco1V2 from './components/bloco1-v2';
 
 function App() {
 
@@ -20,42 +22,9 @@ function App() {
           alt='banner Será que vai chover? Agricultura familiar e clima' />
 
         {/* Bloco 1 Formacao Nacional */}
-        <section className='bloco-1'>
-          <div className='bloco-1-div-1'>
-            <h2 className='title' >FORMAÇÃO <br></br> NACIONAL</h2>
-            <p style={{ color: '#90401d' }}>
-              Impactos das mudanças
-              climáticas e contribuições
-              da agricultura familiar no
-              contexto da COP30 no
-              Brasil
-            </p>
-          </div>
-          <div className='bloco-1-div-2' style={{ color: '#90401d' }}>
-            <p >
-              Cada vez mais vemos mudanças radicais nos regimes de
-              chuvas, precipitações intensas, alagamentos, secas e ondas de
-              calor. Esses são apenas alguns dos eventos que acontecem de
-              maneira mais presente e mais forte, prejudicando a produção de
-              alimentos. Isso põe em risco o meio de vida dos trabalhadores e
-              ameaça a soberania alimentar.
-            </p>
-            <p>
-              É por isso que esse setor precisa agir para ser parte da solução
-              – e, sabemos, existe um grande potencial para isso. As práticas
-              de cultivo e manejo do solo típicas da agricultura familiar são em
-              geral mais sustentáveis e menos baseadas no desmatamento.
-            </p>
-            <p>
-              Mas, para que os agricultores e agricultoras familiares
-              consigam produzir de forma mais sustentável, mantendo suas
-              práticas com menos emissões de carbono, algumas ações são
-              necessárias.
-            </p>
-          </div>
-        </section>
 
-        <Bloco1 />
+        {/* <Bloco1 /> */}
+        <Bloco1V2 />
 
         {/* Bloco 2 Datas e Baixe aqui */}
         <section className='bloco-2'>
@@ -139,7 +108,9 @@ function App() {
           <iframe src='https://www.utopika.com.br/sobre' width='100%' height='100%' style={{ border: 'none' }}></iframe>
         </div> */}
 
-        <ContactForm />
+        {/* <ContactForm /> */}
+
+        <Formulario />
 
       </section>
     </main>
