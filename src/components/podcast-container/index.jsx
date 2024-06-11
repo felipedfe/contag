@@ -17,7 +17,7 @@ import leftArrow from '../../assets/images/left.svg';
 import rightArrow from '../../assets/images/right.svg';
 import spotify from '../../assets/images/icone-spotify.svg'
 import download from '../../assets/images/icone-download.svg'
-import podcastThumb1 from '../../assets/images/thumb-podcast-1.jpg';
+import podcastThumb1 from '../../assets/images/thumb-podcast-1.webp';
 
 const Podcast = () => {
 
@@ -59,7 +59,7 @@ const Podcast = () => {
 
   var settings = {
     infinite: episodes.length > 1,
-    arrows: episodes.length > 0,
+    arrows: episodes.length > 1,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,

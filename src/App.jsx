@@ -26,11 +26,11 @@ function App() {
         {/* <Bloco1 /> */}
         <Bloco1V2 />
 
-        {/* Bloco 2 */}
-        <Bloco2 />
-
         {/* Bloco 3 */}
         <BlocoVideo />
+
+        {/* Bloco 2 */}
+        <Bloco2 />
 
         {/* Bloco 4 */}
         <Podcast />
