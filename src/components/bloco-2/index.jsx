@@ -10,6 +10,7 @@ const Container = styled.section`
 
   @media all and (max-width: 1024px) {
     grid-template-columns: 100%;
+    gap: 1rem;
 }
 `;
 
