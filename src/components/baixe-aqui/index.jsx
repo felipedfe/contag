@@ -76,7 +76,7 @@ const BaixeAqui = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/seraquevaichover/cartilha-contag-v2.pdf';
+    link.href = '/seraquevaichover/Cartilha_CONTAG_WEB_v2.pdf';
     link.download = 'cartilha-contag.pdf';
     document.body.appendChild(link);
     link.click();

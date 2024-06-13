@@ -81,7 +81,7 @@ const Participe = () => {
         <TextWrapper>
           <p className='participe'>Participe da conversa!</p>
           <p className='info'>
-            Use as hashtags #Seravaichover e #AgriculturaFamilareClima nas redes sociais para
+            Use as hashtags #Seraquevaichover e #AgriculturaFamilareClima nas redes sociais para
             compartilhar suas ideias e experiências sobre a agricultura familiar e a crise do clima.
           </p>
         </TextWrapper>
