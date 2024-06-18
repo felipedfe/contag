@@ -47,11 +47,13 @@ const Podcast = () => {
   //   nextArrow: <CustomNextArrow />
   // };
 
+  const descriptionEp0 = 'As mudanças climáticas já não são uma previsão distante – elas estão acontecendo agora e afetando diretamente quem trabalha no campo, na floresta e nas águas. Secas prolongadas, chuvas intensas e fora de época, mudanças na estação de plantio e colheita... Tudo isso altera a rotina e a produtividade de quem cultiva a terra com tanto esforço e dedicação.'
+
   const episodes = [
     {
       thumb: podcastThumb1,
       title: "EP 0 - Teaser",
-      description: "Em breve",
+      description: descriptionEp0,
       alt: "homem do campo olhando para o horizonte",
     },
     // Você pode adicionar mais episódios aqui
@@ -94,8 +96,12 @@ const Podcast = () => {
                     {episode.description}
                   </Description>
                   <IconWrapper>
-                    <img src={spotify} alt='icone spotify' />
-                    <img src={download} alt='icone download' />
+                    <a className='link' href='https://open.spotify.com/show/5PQ5ishDltWUO7tVsAqr4s' target='_blank'>
+                      <img src={spotify} alt='icone spotify' />
+                    </a>
+                    {/* <a className='link' href='https://open.spotify.com/show/5PQ5ishDltWUO7tVsAqr4s' target='_blank'> */}
+                    {/* <img src={download} alt='icone download' /> */}
+                    {/* </a> */}
                   </IconWrapper>
                 </InfoWrapper>
               </PodcastCard>

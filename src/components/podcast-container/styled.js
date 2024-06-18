@@ -83,6 +83,16 @@ export const InfoWrapper = styled.div`
 
 export const IconWrapper = styled.div`
   display: flex;
-  max-width: 60px;
+  /* max-width: 60px; */
+  justify-content: flex-start;
   margin-left: -5px;
+
+  & img {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* & img {
+    width: 100%;
+  } */
 `;
