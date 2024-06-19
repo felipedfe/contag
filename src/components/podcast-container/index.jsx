@@ -54,7 +54,7 @@ const Podcast = () => {
       thumb: podcastThumb1,
       title: "EP 0 - Teaser",
       description: descriptionEp0,
-      alt: "homem do campo olhando para o horizonte",
+      alt: "mulher do campo olhando para o céu",
     },
     // Você pode adicionar mais episódios aqui
   ];
@@ -89,9 +89,11 @@ const Podcast = () => {
           {episodes.map((episode, index) => (
             <PodCastWrapper key={index}>
               <PodcastCard>
-                <img src={episode.thumb} alt={episode.alt} />
+                <a href='https://open.spotify.com/show/5PQ5ishDltWUO7tVsAqr4s' target='_blank'>
+                  <img src={episode.thumb} alt={episode.alt} />
+                </a>
                 <InfoWrapper>
-                  <PodcastTitle>{episode.title}</PodcastTitle>
+                  <PodcastTitle href='https://open.spotify.com/show/5PQ5ishDltWUO7tVsAqr4s' target='_blank'>{episode.title}</PodcastTitle>
                   <Description>
                     {episode.description}
                   </Description>

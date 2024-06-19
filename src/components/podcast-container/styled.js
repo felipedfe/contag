@@ -56,7 +56,7 @@ export const PodcastCard = styled.section`
   grid-template-columns: 1fr 2fr;
   gap: 3rem;
 
-  &>img {
+  & img {
       width: 100%;
   }
 
@@ -66,9 +66,15 @@ export const PodcastCard = styled.section`
   }
 `;
 
-export const PodcastTitle = styled.h3`
+export const PodcastTitle = styled.a`
   color: #ffd200;
   font-weight: 800;
+  font-size: 19px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+}
 `;
 
 export const Description = styled.p`
