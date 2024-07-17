@@ -55,9 +55,15 @@ export const PodcastCard = styled.section`
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 3rem;
+  padding: 0 8px 0 8px;
 
   & img {
       width: 100%;
+      transition: transform 0.3s ease;
+  }
+
+  & img:hover {
+    transform: scale(1.03);
   }
 
   @media all and (max-width: 600px) {
@@ -96,6 +102,11 @@ export const IconWrapper = styled.div`
   & img {
     width: 70px;
     height: 70px;
+    transition: transform 0.3s ease;
+  }
+
+  & img:hover {
+    transform: scale(1.1);
   }
 
   /* & img {

@@ -17,6 +17,7 @@ import leftArrow from '../../assets/images/left.svg';
 import rightArrow from '../../assets/images/right.svg';
 import spotify from '../../assets/images/icone-spotify.svg'
 import download from '../../assets/images/icone-download.svg'
+import podcastThumb0 from '../../assets/images/thumb-podcast-0.webp';
 import podcastThumb1 from '../../assets/images/thumb-podcast-1.webp';
 
 const Podcast = () => {
@@ -47,14 +48,24 @@ const Podcast = () => {
   //   nextArrow: <CustomNextArrow />
   // };
 
-  const descriptionEp0 = 'As mudanças climáticas já não são uma previsão distante – elas estão acontecendo agora e afetando diretamente quem trabalha no campo, na floresta e nas águas. Secas prolongadas, chuvas intensas e fora de época, mudanças na estação de plantio e colheita... Tudo isso altera a rotina e a produtividade de quem cultiva a terra com tanto esforço e dedicação.'
+  const descriptionEp0 = 'As mudanças climáticas já não são uma previsão distante – elas estão acontecendo agora e afetando diretamente quem trabalha no campo, na floresta e nas águas. Secas prolongadas, chuvas intensas e fora de época, mudanças na estação de plantio e colheita... Tudo isso altera a rotina e a produtividade de quem cultiva a terra com tanto esforço e dedicação.';
+
+  const descriptionEp1 = 'As mudanças climáticas já estão acontecendo e afetando diretamente quem trabalha no campo, na floresta e nas águas. Secas prolongadas, chuvas intensas e fora de época, mudanças na estação de plantio e colheita... Tudo isso altera a rotina e a produtividade de quem cultiva a terra com tanto esforço e dedicação.';
 
   const episodes = [
     {
-      thumb: podcastThumb1,
-      title: "EP 0 - Teaser",
+      thumb: podcastThumb0,
+      title: "EP 0 - TEASER",
       description: descriptionEp0,
       alt: "mulher do campo olhando para o céu",
+      link: "https://open.spotify.com/episode/5xutRGRdW8KzygrkEYcrEe"
+    },
+    {
+      thumb: podcastThumb1,
+      title: "EP 1 - SERÁ QUE VAI CHOVER? NO NORDESTE",
+      description: descriptionEp1,
+      alt: "pessoa do campo plantando na terra",
+      link: "https://open.spotify.com/episode/59cEX0gn6OMVXePzOVLqPz"
     },
     // Você pode adicionar mais episódios aqui
   ];
@@ -62,11 +73,13 @@ const Podcast = () => {
   var settings = {
     infinite: episodes.length > 1,
     arrows: episodes.length > 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: <CustomPrevArrow />,
-    nextArrow: <CustomNextArrow />
+    nextArrow: <CustomNextArrow />,
   };
 
   return (
@@ -89,19 +102,19 @@ const Podcast = () => {
           {episodes.map((episode, index) => (
             <PodCastWrapper key={index}>
               <PodcastCard>
-                <a href='https://open.spotify.com/show/5PQ5ishDltWUO7tVsAqr4s' target='_blank'>
+                <a href={episode.link} target='_blank'>
                   <img src={episode.thumb} alt={episode.alt} />
                 </a>
                 <InfoWrapper>
-                  <PodcastTitle href='https://open.spotify.com/show/5PQ5ishDltWUO7tVsAqr4s' target='_blank'>{episode.title}</PodcastTitle>
+                  <PodcastTitle href={episode.link} target='_blank'>{episode.title}</PodcastTitle>
                   <Description>
                     {episode.description}
                   </Description>
                   <IconWrapper>
-                    <a className='link' href='https://open.spotify.com/show/5PQ5ishDltWUO7tVsAqr4s' target='_blank'>
+                    <a className='link' href={episode.link} target='_blank'>
                       <img src={spotify} alt='icone spotify' />
                     </a>
-                    {/* <a className='link' href='https://open.spotify.com/show/5PQ5ishDltWUO7tVsAqr4s' target='_blank'> */}
+                    {/* <a className='link' href={episode.link} target='_blank'> */}
                     {/* <img src={download} alt='icone download' /> */}
                     {/* </a> */}
                   </IconWrapper>
