@@ -19,6 +19,7 @@ import spotify from '../../assets/images/icone-spotify.svg'
 import download from '../../assets/images/icone-download.svg'
 import podcastThumb0 from '../../assets/images/thumb-podcast-0.webp';
 import podcastThumb1 from '../../assets/images/thumb-podcast-1.webp';
+import podcastThumb2 from '../../assets/images/thumb-podcast-2.webp';
 
 const Podcast = () => {
 
@@ -36,21 +37,10 @@ const Podcast = () => {
     );
   };
 
-  // Configuração do carrossel
-  // var settings = {
-  //   // dots: true,
-  //   infinite: true,
-  //   arrows: false,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   prevArrow: <CustomPrevArrow />,
-  //   nextArrow: <CustomNextArrow />
-  // };
 
   const descriptionEp0 = 'As mudanças climáticas já não são uma previsão distante – elas estão acontecendo agora e afetando diretamente quem trabalha no campo, na floresta e nas águas. Secas prolongadas, chuvas intensas e fora de época, mudanças na estação de plantio e colheita... Tudo isso altera a rotina e a produtividade de quem cultiva a terra com tanto esforço e dedicação.';
-
   const descriptionEp1 = 'As mudanças climáticas já estão acontecendo e afetando diretamente quem trabalha no campo, na floresta e nas águas. Secas prolongadas, chuvas intensas e fora de época, mudanças na estação de plantio e colheita... Tudo isso altera a rotina e a produtividade de quem cultiva a terra com tanto esforço e dedicação.';
+  const descriptionEp2 = 'As mudanças climáticas já estão acontecendo e afetando diretamente quem trabalha no campo, na floresta e nas águas. Secas prolongadas, chuvas intensas e fora de época, mudanças na estação de plantio e colheita... Tudo isso altera a rotina e a produtividade de quem cultiva a terra com tanto esforço e dedicação.';
 
   const episodes = [
     {
@@ -67,7 +57,14 @@ const Podcast = () => {
       alt: "pessoa do campo plantando na terra",
       link: "https://open.spotify.com/episode/59cEX0gn6OMVXePzOVLqPz"
     },
-    // Você pode adicionar mais episódios aqui
+    {
+      thumb: podcastThumb2,
+      title: "EP 2 - SERÁ QUE VAI CHOVER? NO SUDESTE",
+      description: descriptionEp2,
+      alt: "pessoas almoçando ao ar livre no campo",
+      link: "https://open.spotify.com/episode/4k1iX7epFMZL6owlHLC47h"
+    },
+    // adicionar mais episódios aqui
   ];
 
   var settings = {
