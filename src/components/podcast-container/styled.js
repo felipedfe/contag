@@ -56,6 +56,7 @@ export const PodcastCard = styled.section`
   grid-template-columns: 1fr 2fr;
   gap: 3rem;
   padding: 0 8px 0 8px;
+  align-items: center;
 
   & img {
       width: 100%;

@@ -20,6 +20,8 @@ import download from '../../assets/images/icone-download.svg'
 import podcastThumb0 from '../../assets/images/thumb-podcast-0.webp';
 import podcastThumb1 from '../../assets/images/thumb-podcast-1.webp';
 import podcastThumb2 from '../../assets/images/thumb-podcast-2.webp';
+import podcastThumb3 from '../../assets/images/thumb-podcast-3.webp';
+import podcastThumb4 from '../../assets/images/thumb-podcast-4.webp';
 
 const Podcast = () => {
 
@@ -41,6 +43,8 @@ const Podcast = () => {
   const descriptionEp0 = 'As mudanças climáticas já não são uma previsão distante – elas estão acontecendo agora e afetando diretamente quem trabalha no campo, na floresta e nas águas. Secas prolongadas, chuvas intensas e fora de época, mudanças na estação de plantio e colheita... Tudo isso altera a rotina e a produtividade de quem cultiva a terra com tanto esforço e dedicação.';
   const descriptionEp1 = 'As mudanças climáticas já estão acontecendo e afetando diretamente quem trabalha no campo, na floresta e nas águas. Secas prolongadas, chuvas intensas e fora de época, mudanças na estação de plantio e colheita... Tudo isso altera a rotina e a produtividade de quem cultiva a terra com tanto esforço e dedicação.';
   const descriptionEp2 = 'As mudanças climáticas já estão acontecendo e afetando diretamente quem trabalha no campo, na floresta e nas águas. Secas prolongadas, chuvas intensas e fora de época, mudanças na estação de plantio e colheita... Tudo isso altera a rotina e a produtividade de quem cultiva a terra com tanto esforço e dedicação.';
+  const descriptionEp3 = 'As mudanças climáticas já estão acontecendo e afetando diretamente quem trabalha no campo, na floresta e nas águas. Secas prolongadas, chuvas intensas e fora de época, mudanças na estação de plantio e colheita... No episódio de hoje, trazemos depoimentos de companheiros e companheiras da região Centro-Oeste.';
+  const descriptionEp4 = 'As mudanças climáticas já estão acontecendo e afetando diretamente quem trabalha no campo, na floresta e nas águas. Secas prolongadas, chuvas intensas e fora de época, mudanças na estação de plantio e colheita... No episódio de hoje, trazemos depoimentos de companheiros e companheiras da região Sul.';
 
   const episodes = [
     {
@@ -63,6 +67,20 @@ const Podcast = () => {
       description: descriptionEp2,
       alt: "pessoas almoçando ao ar livre no campo",
       link: "https://open.spotify.com/episode/4k1iX7epFMZL6owlHLC47h"
+    },
+    {
+      thumb: podcastThumb3,
+      title: "EP 3 - SERÁ QUE VAI CHOVER? NO CENTRO-OESTE",
+      description: descriptionEp3,
+      alt: "homem do campo com paisagem atrás",
+      link: "https://open.spotify.com/episode/4pYfvZiTIO9CjeOAWWJMGd"
+    },
+    {
+      thumb: podcastThumb4,
+      title: "EP 4 - SERÁ QUE VAI CHOVER? NO SUL",
+      description: descriptionEp4,
+      alt: "cavalo e arado",
+      link: "https://open.spotify.com/episode/489wxJBWJKWo6jkAqCuVzj"
     },
     // adicionar mais episódios aqui
   ];
