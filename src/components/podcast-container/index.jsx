@@ -22,6 +22,7 @@ import podcastThumb1 from '../../assets/images/thumb-podcast-1.webp';
 import podcastThumb2 from '../../assets/images/thumb-podcast-2.webp';
 import podcastThumb3 from '../../assets/images/thumb-podcast-3.webp';
 import podcastThumb4 from '../../assets/images/thumb-podcast-4.webp';
+import podcastThumb5 from '../../assets/images/thumb-podcast-5.webp';
 
 const Podcast = () => {
 
@@ -45,6 +46,7 @@ const Podcast = () => {
   const descriptionEp2 = 'As mudanças climáticas já estão acontecendo e afetando diretamente quem trabalha no campo, na floresta e nas águas. Secas prolongadas, chuvas intensas e fora de época, mudanças na estação de plantio e colheita... Tudo isso altera a rotina e a produtividade de quem cultiva a terra com tanto esforço e dedicação.';
   const descriptionEp3 = 'As mudanças climáticas já estão acontecendo e afetando diretamente quem trabalha no campo, na floresta e nas águas. Secas prolongadas, chuvas intensas e fora de época, mudanças na estação de plantio e colheita... No episódio de hoje, trazemos depoimentos de companheiros e companheiras da região Centro-Oeste.';
   const descriptionEp4 = 'As mudanças climáticas já estão acontecendo e afetando diretamente quem trabalha no campo, na floresta e nas águas. Secas prolongadas, chuvas intensas e fora de época, mudanças na estação de plantio e colheita... No episódio de hoje, trazemos depoimentos de companheiros e companheiras da região Sul.';
+  const descriptionEp5 = 'As mudanças climáticas já estão acontecendo e afetando diretamente quem trabalha no campo, na floresta e nas águas. Secas prolongadas, chuvas intensas e fora de época, mudanças na estação de plantio e colheita... No episódio de hoje, trazemos depoimentos de companheiros e companheiras da região Sul.';
 
   const episodes = [
     {
@@ -81,6 +83,13 @@ const Podcast = () => {
       description: descriptionEp4,
       alt: "cavalo e arado",
       link: "https://open.spotify.com/episode/489wxJBWJKWo6jkAqCuVzj"
+    },
+    {
+      thumb: podcastThumb5,
+      title: "EP 5 - SERÁ QUE VAI CHOVER? NO NORTE",
+      description: descriptionEp5,
+      alt: "imagens de colheita",
+      link: "https://open.spotify.com/episode/3xLin4GaGswfviarNcOkuC"
     },
     // adicionar mais episódios aqui
   ];
