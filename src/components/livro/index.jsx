@@ -109,7 +109,7 @@ const Livro = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Cartilha_TAXONOMIA_v1.pdf';
+    link.href = '/agricultura-familiar-e-os-sistemas-alimentares.pdf';
     link.download = 'cartilha-contag.pdf';
     document.body.appendChild(link);
     link.click();
@@ -117,7 +117,7 @@ const Livro = () => {
   };
 
   const handleOpenPDF = () => {
-    window.open('/Cartilha_TAXONOMIA_v1.pdf', '_blank');
+    window.open('/agricultura-familiar-e-os-sistemas-alimentares.pdf', '_blank');
   };
 
   return (
