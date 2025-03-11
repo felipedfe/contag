@@ -1,22 +1,25 @@
 import styled from 'styled-components';
-import cartilha from '../../assets/images/cartilha.png';
+import livro from '../../assets/images/livro-crop-2.png';
 
 const Container = styled.section`
-  background-color: #689261;
+  background-color: #ffd100;
   display: grid;
-  grid-template-columns: 55% 45%;
+  /* grid-template-columns: 55% 45%; */
+  grid-template-columns: 1fr 1fr;
   padding: 2rem 0 1rem 0;
   overflow: hidden;
   align-items: center;
 
   & img {
     width: 100%;
-    /* max-width: 450px; */
   }
 
   @media all and (max-width: 600px) {
     grid-template-columns: 100%;
     gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
     & img {
       width: 80%;
@@ -32,7 +35,7 @@ const Info = styled.div`
   justify-content: center;
   align-items: flex-start;
   gap: 1.5rem;
-  padding: 0 2.5rem 0 2rem;
+  padding: 0 2rem 0 2rem;
 
   & p {
     color: #fff;
@@ -64,8 +67,8 @@ const ButtonWrapper = styled.div`
 `;
 
 const DownloadButton = styled.button`
-  color: #90401d;
-  background-color: #ffd100;
+  color: #f0f0f0;
+  background-color: #cd450a;
   font-size: 22px;
   padding: 8px;
   font-weight: 800;
@@ -78,22 +81,35 @@ const DownloadButton = styled.button`
 
   @media all and (min-width: 700px) {
      &:hover {
-       background-color: #ffdf4e;
+       background-color: #ce6336;
      }
   }
 `;
 
 const Title = styled.p`
+  color: #903F1C!important;
+
+  & span {
+    color: #cd450a;
+    font-weight: 800;
+  }
+
   @media all and (max-width: 500px){
     text-align: center;
   }
 `;
 
-const BaixeAqui = () => {
+const Image = styled.img`
+  /* max-height: 445px; */
+  /* max-width: 320px; */
+  padding-left: 4rem;
+`;
+
+const Livro = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Cartilha_CONTAG_WEB_v3.pdf';
+    link.href = '/Cartilha_TAXONOMIA_v1.pdf';
     link.download = 'cartilha-contag.pdf';
     document.body.appendChild(link);
     link.click();
@@ -101,14 +117,14 @@ const BaixeAqui = () => {
   };
 
   const handleOpenPDF = () => {
-    window.open('/Cartilha_CONTAG_WEB_v3.pdf', '_blank');
+    window.open('/Cartilha_TAXONOMIA_v1.pdf', '_blank');
   };
 
   return (
     <Container>
-      <img src={cartilha} alt='cartilha para baixar' draggable="false" />
+      <Image src={livro} alt='livro para baixar' draggable="false" />
       <Info>
-        <Title>Conheça mais sobre essa questão fazendo o download da cartilha</Title>
+        <Title>Agricultura familiar e sistemas alimentares: <span>remoção de carbono e transição justa</span></Title>
         <ButtonWrapper>
           <DownloadButton onClick={handleOpenPDF}>
             CLIQUE AQUI
@@ -119,4 +135,4 @@ const BaixeAqui = () => {
   )
 };
 
-export default BaixeAqui;
+export default Livro;
