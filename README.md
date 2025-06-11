@@ -2,29 +2,29 @@
 
 ![Imagem do site](https://raw.githubusercontent.com/felipedfe/felipedfe/refs/heads/main/assets/contag2.png)
 
-Landing page desenvolvida para a **CONTAG (Confederação Nacional dos Trabalhadores na Agricultura)**, com o objetivo de comunicar de forma visual e acessível os impactos das mudanças climáticas sobre a agricultura familiar.
+
+Landing page developed for **CONTAG (Confederação Nacional dos Trabalhadores na Agricultura)**, with the goal of visually and accessibly communicating the impacts of climate change on family farming.
 
 🟡 [www.seraquevaichover.org.br](https://www.seraquevaichover.org.br/) 🟡
 
 ---
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- **Vite + React**
-- **Styled-components**
-- Layout 100% responsivo
-
-
-
-
-## Destaques
-
-- Integração com **podcast** e **materiais de leitura**
-- Design pensado para navegação em dispositivos móveis
+- Vite + React  
+- Styled-components  
+- Fully responsive layout
 
 
 
 
-## Organização
+## Highlights
 
-Esse projeto faz parte do portfólio da [Utópika Estúdio Criativo](https://utopika.com.br)
+- Integration with podcasts and reading materials  
+- Mobile-first design focused on accessibility and usability  
+
+
+
+##  Organization
+
+This project is part of the portfolio of [Utópika Estúdio Criativo](https://www.utopika.com.br/?lang=en)
