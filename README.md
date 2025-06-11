@@ -1,8 +1,30 @@
-# React + Vite
+# Será Que Vai Chover? — CONTAG
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Imagem do site](https://raw.githubusercontent.com/felipedfe/felipedfe/refs/heads/main/assets/contag2.png)
 
-Currently, two official plugins are available:
+Landing page desenvolvida para a **CONTAG (Confederação Nacional dos Trabalhadores na Agricultura)**, com o objetivo de comunicar de forma visual e acessível os impactos das mudanças climáticas sobre a agricultura familiar.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🟡 [www.seraquevaichover.org.br](https://www.seraquevaichover.org.br/) 🟡
+
+---
+
+## Tecnologias Utilizadas
+
+- **Vite + React**
+- **Styled-components**
+- Layout 100% responsivo
+
+
+
+
+## Destaques
+
+- Integração com **podcast** e **materiais de leitura**
+- Design pensado para navegação em dispositivos móveis
+
+
+
+
+## Organização
+
+Esse projeto faz parte do portfólio da [Utópika Estúdio Criativo](https://utopika.com.br)
